@@ -1,16 +1,18 @@
 package org.dropProject.samples.sampleKotlinAssignment
 
 fun findMax(numbers: Array<Int>) : Int {
-    if (numbers.size == 0) {
-        return 0
-    }
-
     var max = numbers[0]
-    for (pos in numbers) {
-        if (max > numbers[pos]) {
-            max = numbers[pos]
+    for (number in numbers) {
+        if (max < number) {
+            max = number
         }
     }
 
-    return max
+    return 0
+}
+
+fun main() {
+    val numbers = arrayOf(1, 2, 3, -6, -7)
+
+    println(findMax(numbers))
 }
