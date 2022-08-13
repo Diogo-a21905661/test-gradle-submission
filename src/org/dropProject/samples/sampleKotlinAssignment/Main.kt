@@ -1,4 +1,4 @@
-package org.dropProject.samples.sampleKotlinSubmission
+package org.dropProject.samples.sampleKotlinAssignment
 
 fun findMax(numbers: Array<Int>) : Int {
     var max = numbers[0]
